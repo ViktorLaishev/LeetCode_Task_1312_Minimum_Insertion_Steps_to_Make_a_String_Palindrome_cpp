@@ -11,7 +11,7 @@ public:
                 dp[i][i+1] = (s[i] == s[i+1]) ? 0 : 1; 
             }
         }
-         
+          
         // fill up dp table
         for (int len = 3; len <= n; len++) {
             for (int i = 0; i <= n-len; i++) {
