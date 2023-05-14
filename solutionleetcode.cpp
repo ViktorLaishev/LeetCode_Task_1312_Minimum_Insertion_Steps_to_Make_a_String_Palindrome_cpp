@@ -2,7 +2,7 @@ class Solution {
 public:
     int minInsertions(string s) {
         int n = s.size();
-        vector<vector<int>> dp(n, vector<int>(n, 0));
+        vector<vector<int>> dp(n, vector<int>(n, 0)); 
         
         // base cases
         for (int i = 0; i < n; i++) {
