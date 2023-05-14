@@ -5,7 +5,7 @@ public:
         vector<vector<int>> dp(n, vector<int>(n, 0)); 
         
         // base cases
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) { 
             dp[i][i] = 0;
             if (i < n-1) {
                 dp[i][i+1] = (s[i] == s[i+1]) ? 0 : 1; 
